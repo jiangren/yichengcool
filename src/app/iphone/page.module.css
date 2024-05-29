@@ -1,0 +1,51 @@
+.imgcontainer {
+    
+}
+
+.showcontainer {
+    position: relative;
+    width: 200px;
+    height: 405px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.showcontainer .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 405px;
+    z-index: 2;
+}
+
+.showcontainer .week {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.showcontainer .time {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    width: 200px;
+    font-size: 50px;
+    z-index: 2;
+}
+
+.showcontainer .uploadimg {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 190px;
+    height: 398px;
+    z-index: 1;
+    border-radius: 24px;
+    background-position: center center;
+    background-size: auto 398px;
+}
