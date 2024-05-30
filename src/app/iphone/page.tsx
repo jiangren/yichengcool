@@ -42,7 +42,7 @@ export default function Home() {
         <div className={styles.imgcontainer}>
             <input type="file" accept="image/*" onChange={handleImageChange} />
             <div className={styles.showcontainer} ref={captureRef}>
-                <Image className={styles.cover} src="/images/iphonebg.png" alt="Logo" width={816} height={1653} />
+                <img className={styles.cover} src="/images/iphonebg.png" alt="Logo" />
                 <div className={styles.week}>{week}</div>
                 <div className={styles.time}>{time}</div>
                 {
