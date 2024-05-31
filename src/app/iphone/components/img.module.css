@@ -53,7 +53,7 @@
     left: 0;
     top: 40px;
     width: 200px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     z-index: 2;
 }
@@ -63,7 +63,7 @@
     left: 0;
     top: 160px;
     width: 800px;
-    font-size: 56px;
+    font-size: 48px;
     font-weight: bold;
     z-index: 2;
 }
