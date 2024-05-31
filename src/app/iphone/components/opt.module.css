@@ -1,0 +1,8 @@
+.optcontainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    width: 250px;
+    padding: 10px;
+}
