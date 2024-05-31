@@ -4,29 +4,30 @@ import styles from "./img.module.css";
 import globalStyles from '../page.module.css';
 
 interface IImgContainer {
-    imageSrc: string;
+    imageUrl: string;
+    name?: string;
     week?: string;
     time?: string
 }
 
-const ShowImg = ({ imageSrc, week, time } : IImgContainer) => (
+const ShowImg = ({ imageUrl, week, time } : IImgContainer) => (
     <>
         <img className={styles.cover} src="/images/iphonebg.png" alt="Logo" />
         <div className={styles.week}>{week}</div>
         <div className={styles.time}>{time}</div>
         {
-            imageSrc && <div className={styles.uploadimg} style={{backgroundImage: `url(${imageSrc})`}} />
+            imageUrl && <div className={styles.uploadimg} style={{backgroundImage: `url(${imageUrl})`}} />
         }
     </>
 );
 
-const ImgContainer = ({ imageSrc }: IImgContainer) => {
+const ImgContainer = ({ imageUrl, name }: IImgContainer) => {
     const [week] = useState('5月20日 星期一');
     const [time] = useState('13:14');
     const captureRef = useRef(null);
 
     const handleCapture = useCallback(async () => {
-        if (captureRef.current && imageSrc) {
+        if (captureRef.current && imageUrl) {
             const canvas = await html2canvas(captureRef.current, {
                 backgroundColor: 'transparent',
                 width: 800,
@@ -37,19 +38,19 @@ const ImgContainer = ({ imageSrc }: IImgContainer) => {
 
             const link = document.createElement('a');
             link.href = imgData;
-            link.download = 'captured-image.png';
+            link.download = `iphone_${name as string}`;
             link.click();
         }
-    }, [imageSrc]);
+    }, [imageUrl, name]);
 
     return (
         <div className={styles.imgcontainer}>
             <div className={styles.showcontainer}>
-                <ShowImg imageSrc={imageSrc} week={week} time={time} />
+                <ShowImg imageUrl={imageUrl} week={week} time={time} />
             </div>
             <div className={styles.shodowcontainer}>
                 <div className={styles.showcontainer2} ref={captureRef}>
-                    <ShowImg imageSrc={imageSrc} week={week} time={time} />
+                    <ShowImg imageUrl={imageUrl} week={week} time={time} />
                 </div>
             </div>
             <div className={`${globalStyles.btn} ${styles.downloadbtn}`} onClick={handleCapture} style={{ marginRight: '10px' }}>下载</div>

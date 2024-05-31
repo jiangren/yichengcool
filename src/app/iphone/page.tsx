@@ -6,13 +6,13 @@ import ImgContainer from './components/img_container';
 import OptContainer from './components/opt_container';
 
 export default function Home() {
-    const [imageSrc, setImageSrc] = useState<string>('');
+    const [imageInfo, setImageInfo] = useState<{url: string; name: string}>({url: '', name: ''});
 
     return (
         <div className={styles.pagecontainer}>
             <SelectContainer />
-            <ImgContainer imageSrc={imageSrc} />
-            <OptContainer setImageSrc={setImageSrc} />
+            <ImgContainer imageUrl={imageInfo.url} name={imageInfo.name} />
+            <OptContainer setImageInfo={setImageInfo} />
         </div>
     );
 }
