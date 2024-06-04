@@ -113,3 +113,14 @@
 .downloadbtn {
     margin-top: 10px;
 } 
+
+/* Mobile */
+@media (max-width: 650px) {
+    .imgcontainer {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+}

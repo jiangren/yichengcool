@@ -62,7 +62,7 @@ const ImgContainer = ({ imageUrl, name, timeInfo }: IImgContainer) => {
                     <ShowImg imageUrl={imageUrl} timeInfo={timeInfo} />
                 </div>
             </div>
-            <div className={`${globalStyles.btn} ${styles.downloadbtn}`} onClick={handleCapture} style={{ marginRight: '10px' }}>下载</div>
+            <div className={`${globalStyles.btn} ${styles.downloadbtn}`} onClick={handleCapture}>下载</div>
         </div>
     );
 }

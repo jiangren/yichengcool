@@ -23,3 +23,11 @@
 .flex {
     display: flex;
 }
+
+/* Mobile */
+@media (max-width: 650px) {
+    .pagecontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
