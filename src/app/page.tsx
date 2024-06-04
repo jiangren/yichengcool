@@ -10,7 +10,7 @@ export default function Home() {
           fontSize: "30px",
         }}>橙堡之家</p>
       </div>
-      <img className={styles.showimg} alt="橙堡" src="https://i.postimg.cc/qMqg29SV/pngg.jpg" />
+      <img className={styles.showimg} alt="橙堡" src="https://s1.imagehub.cc/images/2024/06/04/070597db553fcf4e8cb626c90dfd611a.jpeg" />
       <div className={styles.text}>
         <p style={{
           fontSize: "24px",
