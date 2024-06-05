@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback } from 'react';
 import html2canvas from 'html2canvas';
 import toast from 'react-hot-toast';
 import { ITimeInfo } from '@/utils/types';
+import { Icon1 } from '@/components/svg';
 import styles from "./img.module.css";
 import globalStyles from '../page.module.css';
 
@@ -25,6 +26,9 @@ const ShowImg = ({ imageUrl, timeInfo } : IImgContainer) => (
         {
             imageUrl && <div className={styles.uploadimg} style={{backgroundImage: `url(${imageUrl})`}} />
         }
+        <div className={styles.svg}>
+            <Icon1 />
+        </div>
     </>
 );
 

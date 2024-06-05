@@ -114,6 +114,23 @@
     margin-top: 10px;
 } 
 
+.showcontainer .svg {
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    width: 180px;
+    z-index: 2;
+}
+
+.showcontainer2 .svg {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 720px;
+    height: auto;
+    z-index: 2;
+}
+
 /* Mobile */
 @media (max-width: 650px) {
     .imgcontainer {
