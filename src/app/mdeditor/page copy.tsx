@@ -28,7 +28,6 @@ const MDEditor = () => {
                         __html: parseHTML,
                         }}
                     />
-                    <div>复制</div>
                 </div>
             </Allotment>
         </div>
