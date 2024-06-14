@@ -41,7 +41,7 @@
     font-family: -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
     color: rgb(63, 63, 63);
     letter-spacing: 0.1em;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .md ol, .md ul {
@@ -60,7 +60,7 @@
 }
 
 .md ol > li::marker {
-    color: rgb(255, 95, 46);
+    color: rgb(255, 95, 46) !important;
 }
 
 .md h2 {
@@ -68,7 +68,8 @@
     margin: 30px auto 20px;
     padding-right: 15px;
     padding-left: 15px;
-    font-size: 21px;
+    font-size: 22px;
+    font-weight: bold;
     background: linear-gradient(rgba(255, 255, 255, 0) 92%, rgb(255, 95, 46) 8%);
 }
 
@@ -78,10 +79,16 @@
     margin-bottom: 10px;
     padding-left: 10px;
     border-left: 4px solid rgb(255, 95, 46);
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .md h2 + h3, .md h2 + ol, .md h2 + ul {
     margin-top: 0px;
+}
+
+.md p {
+    margin-bottom: 5px;
 }
 
 .md strong {
