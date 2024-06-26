@@ -1,0 +1,70 @@
+.pagecontainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 1000px;
+    height: 70px;
+    margin-left: -500px;
+}
+
+.content .menu {
+    box-sizing: border-box;
+    width: 150px;
+    height: 100vh;
+    padding: 20px 0px;
+    overflow-y: auto; 
+    background-color: #eee;
+}
+
+.content .menu .title {
+    height: 30px;
+    width: 150px;
+    padding: 0 10px;
+    overflow: hidden;
+    line-height: 30px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content .menu .selected {
+    color: #fff;
+    background-color: rgb(74 166 229);
+}
+
+.content .videowrap {
+    width: 850px;
+    padding: 20px;
+}
+
+.content .videowrap .title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content .videowrap .video {
+    width: 810px;
+    height: 455px;
+}
+
+.content .videowrap iframe {
+    width: 100%;
+    height: 100%;
+}
