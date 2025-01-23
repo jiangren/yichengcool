@@ -7,11 +7,11 @@ const config = {
             propList: ["*"],
             viewportUnit: "vw",
             fontViewportUnit: "vw",
-            selectorBlackList: [],
+            selectorBlackList: ['.fixShowimg'],
             minPixelValue: 0,
             mediaQuery: false,
             replace: true,
-            exclude: [/node_modules/],
+            exclude: [/node_modules/, /src\/app\/iphone/, /src\/app\/mdeditor/, /src\/app\/page\.tsx/],
             landscape: false
         },
         autoprefixer: {}
